@@ -1,6 +1,7 @@
 
 from turtle import Screen
 from snake import Snake
+from food import Food  
 import time
 
 #Crear escenario
@@ -14,6 +15,7 @@ screen.tracer(0)#se quita animacion de cuadro x cuadro
 
 #crear el objeto serpiente -instanciar-
 snake = Snake()
+food= Food()#instanciar comida
 
 #movimiento
 screen.listen()
