@@ -37,4 +37,9 @@ while game_is_on:
         food.refresh() 
         scoreboard.increase_score()
 
+#colision con paredes
+    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
+        game_is_on = False
+        scoreboard.game_over() 
+
 screen.exitonclick()
