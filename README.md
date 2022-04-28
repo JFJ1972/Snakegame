@@ -8,7 +8,7 @@ Se entrega como evaluacion para Educamas y su bootcamp "Programate".</p>
    
 <h2>Desarrollo</h2>
 
-<p>La ejecución de la aplicacion siguiendo instrucciones recibidas a traves de transmision on-line en vivo</p>
+<p>La elaboracion del codigo se realizo siguiendo master class transmitida en vivo por los formadores de Educamas</p>
 
 <h2>Funcionalidad</h2>
 <p>Se maneja con las flechas del teclado, segun se active up, down, left y rigth.</p>
