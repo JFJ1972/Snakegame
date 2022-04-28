@@ -3,7 +3,7 @@ from turtle import Screen
 from snake import Snake
 from food import Food  
 import time
-
+from scoreboard import Scoreboard
 #Crear escenario
 
 screen = Screen() #instanciar el objeto
@@ -16,6 +16,7 @@ screen.tracer(0)#se quita animacion de cuadro x cuadro
 #crear el objeto serpiente -instanciar-
 snake = Snake()
 food= Food()#instanciar comida
+scoreboard= Scoreboard()
 
 #movimiento
 screen.listen()
@@ -31,5 +32,9 @@ while game_is_on:
     time.sleep(0.2)#tiempo de movimiento
     snake.move()
 
+#detectar colision
+    if snake.head.distance(food) < 15:
+        food.refresh() 
+        scoreboard.increase_score()
 
 screen.exitonclick()
